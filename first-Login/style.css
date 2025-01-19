@@ -1,0 +1,146 @@
+/* styles.css */
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f9f9f9;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.container {
+width: 100%;
+max-width: 400px;
+background-color: #fff;
+padding: 20px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+border-radius: 8px;
+}
+
+.form-container {
+text-align: center;
+}
+
+.form-header h1 {
+font-size: 1.8rem;
+margin-bottom: 20px;
+color: #333;
+}
+
+.form {
+display: none;
+opacity: 0;
+transition: opacity 0.5s ease, transform 0.5s ease;
+transform: scale(0.95);
+}
+
+.form.active {
+display: block;
+opacity: 1;
+transform: scale(1);
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    display: block;
+    color: #555;
+  }
+  
+  .input-with-icon {
+    position: relative;
+    display: flex;
+    align-items: center;  /* Aligne l'icône et le placeholder verticalement */
+  }
+  
+  .input-with-icon i {
+    position: absolute;
+    left: 10px;  /* Positionne l'icône à gauche */
+    color: #888;
+    font-size: 1.1rem;
+  }
+  
+  .input-with-icon input {
+    width: 100%;
+    padding-left: 35px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }
+  
+  .input-with-icon input::placeholder {
+    color: #888;
+    font-style: italic;
+    font-size: 0.95em;
+    opacity: 1;
+  }
+  
+  .input-with-icon input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .input-with-icon input:focus::placeholder {
+    color: #bbb;
+    transition: color 0.3s ease-in-out;
+  }
+  
+
+.options {
+display: flex;
+justify-content: space-between;
+font-size: 0.8rem;
+margin-bottom: 20px;
+}
+
+.remember-me input {
+width: auto;
+}
+
+.forget-password {
+color: #007bff;
+}
+
+.btn {
+background-color: #007bff;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+font-size: 0.9rem;
+cursor: pointer;
+width: 100%;
+margin-top: 10px;
+}
+
+.options a {
+color: #007bff;
+font-size: 0.9rem;
+}
+
+.switch-form a {
+color: #007bff;
+text-decoration: none;
+}
+
+.error-message {
+color: red;
+font-size: 0.9em;
+margin-top: 5px;
+display: none;
+}
+
+.error-message.visible {
+display: block;
+}
+    
